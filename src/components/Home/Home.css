@@ -1,7 +1,8 @@
 body{
-    background-image: url('./src/assets/space2.jpg');
+    background-image: url('../../assets/space2.jpg');
     background-size: cover;
 }
+
 .titulo{
     display: flex;
     align-items: center;

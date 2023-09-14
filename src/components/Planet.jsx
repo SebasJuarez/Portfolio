@@ -26,12 +26,6 @@ const Planet = ({ name, orbitDuration, orbitRadius, title, link }) => {
         animationPlayState: paused ? 'paused' : 'running',
       }}
     >
-      {/* Imagen del planeta */}
-      <img
-        src={`./src/assets/${name.toLowerCase()}.png`}
-        alt={name}
-        className={`planet-image ${zoomed ? 'zoomed' : ''}`}
-      />
       {/* Botón de zoom */}
       {zoomed && (
         <div className="zoom-button" onClick={resumeAnimation}>

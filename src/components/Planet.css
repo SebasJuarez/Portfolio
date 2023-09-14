@@ -1,14 +1,45 @@
 /* Planet.css */
-.planet {
+.planet.earth {
+  /* Establece la imagen de fondo y ajusta el tamaño y otras propiedades según sea necesario */
+  background-image: url('../images/earth.png');
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   position: absolute;
   cursor: pointer;
+  transition: transform 0.5s;
   animation: orbit 8s linear infinite, zoom 0.5s linear;
-  transform: scale(1); /* Escala normal */
+}
+
+.planet.mars {
+  /* Establece la imagen de fondo y ajusta el tamaño y otras propiedades según sea necesario */
+  background-image: url('../images/mars.png');
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.5s;
+  animation: orbit 8s linear infinite, zoom 0.5s linear;
+}
+
+.planet.venus {
+  /* Establece la imagen de fondo y ajusta el tamaño y otras propiedades según sea necesario */
+  background-image: url('../images/venus.png');
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.5s;
+  animation: orbit 8s linear infinite, zoom 0.5s linear;
 }
 
 .planet.zoomed {
   transform: scale(2);
-  transform-origin: center; /* Puedes ajustar el valor de escala según el zoom deseado */
 }
 
 .planet-image {
