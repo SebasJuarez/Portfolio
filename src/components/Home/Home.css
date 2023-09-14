@@ -1,0 +1,22 @@
+body{
+    background-image: url('./src/assets/space2.jpg');
+    background-size: cover;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SF-Pro', 'Helvetica Neue', Arial, Helvetica;
+    font-size: 50px;
+    margin-top:0%;
+    margin-bottom: 0%;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SF-Pro', 'Helvetica Neue', Arial, Helvetica;
+    margin-top:0%;
+    margin-bottom: 0%;
+}
+

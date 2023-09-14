@@ -1,0 +1,76 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .contact-item {
+    font-family: 'SF-Pro', 'Helvetica Neue', Arial, Helvetica;
+    font-size: 7vw;
+    color: white;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideIn 2s forwards;
+    text-align: center;
+  }
+  
+  .contact-title {
+    font-size: 5vw; /* Utiliza una unidad relativa (vw) para el tamaño de fuente */
+    margin-top: 0;
+  }
+  
+  .contact-sub {
+    font-size: 3vw; /* Utiliza una unidad relativa (vw) para el tamaño de fuente */
+  }
+  
+  .contact-paragraph {
+    margin: 0 10%; /* Utiliza márgenes en porcentaje para que se ajusten según el ancho de la pantalla */
+  }
+  
+  .contact-paragraph1 {
+    font-size: 1.5vw; /* Utiliza una unidad relativa (vw) para el tamaño de fuente */
+    font-family: 'SF-Pro', 'Helvetica Neue', Arial, Helvetica;
+    margin: 0 10%; /* Utiliza márgenes en porcentaje para que se ajusten según el ancho de la pantalla */
+    color: #ff0000;
+    transform: translateY(100%);
+    animation: slideIn 2s forwards;
+    text-align: center;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  .project-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .project-list li {
+    margin-bottom: 10px;
+  }
+  
+  .project-list li a {
+    font-size: 6vw; /* Utiliza una unidad relativa (vw) para el tamaño de fuente */
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .project-list li a:hover {
+    color: #ff0000;
+    transform: scale(1.1) translateZ(0);
+  }
+  

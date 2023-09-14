@@ -1,0 +1,85 @@
+/* Planet.css */
+.planet {
+  position: absolute;
+  cursor: pointer;
+  animation: orbit 8s linear infinite, zoom 0.5s linear;
+  transform: scale(1); /* Escala normal */
+}
+
+.planet.zoomed {
+  transform: scale(2);
+  transform-origin: center; /* Puedes ajustar el valor de escala según el zoom deseado */
+}
+
+.planet-image {
+  width: 150px;
+  height: 150px;
+}
+
+/* Estilos para el título de la Tierra */
+.earth-title {
+    color: #0f5eaf; /* Color azul */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Estilos para el enlace de la Tierra */
+  .earth-link {
+    background-color: #0f5eaf; /* Color azul */
+    color: #fff; /* Texto en blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+ /* Estilos para el título de Marte */
+.mars-title {
+    color: #d84100; /* Color rojo anaranjado */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Estilos para el enlace de Marte */
+  .mars-link {
+    background-color: #d84100; /* Color rojo anaranjado */
+    color: #fff; /* Texto en blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* Estilos para el título de Venus */
+.venus-title {
+    color: #3fa03f; /* Color verde suave */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Estilos para el enlace de Venus */
+  .venus-link {
+    background-color: #3fa03f; /* Color verde suave */
+    color: #fff; /* Texto en blanco */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  
+
+@keyframes orbit {
+  0% {
+    transform: translateX(-10%) translateY(-15%) rotate(0deg) translateX(-240px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-10%) translateY(-15%) rotate(360deg) translateX(-240px) rotate(-360deg);
+  }
+}

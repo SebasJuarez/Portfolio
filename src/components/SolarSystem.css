@@ -1,0 +1,26 @@
+/* SolarSystem.css */
+.solar-system {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translate(0%, 60%);
+  }
+  
+  .sun {
+    background-image: url("../assets/sun.png");
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .planet {
+    border-radius: 50%;
+    transition: transform 0.5s;
+  }
+  

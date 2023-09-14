@@ -1,0 +1,51 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+  }
+  
+  .about-item {
+    font-family: 'SF-Pro', 'Helvetica Neue', Arial, Helvetica;
+    font-size: 30px;
+    opacity: 0;
+    transform: translateY(50px); /* Cambia el valor para ajustar la altura de la animación */
+    animation: slideIn 2s forwards;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 70px;
+    margin-top: 0;
+  }
+  
+  .about-sub {
+    font-size: 50px;
+    color: #fcbf49; /* Cambia el color de los subtítulos */
+  }
+  
+  .about-paragraph {
+    margin: 20px; /* Agrega espacio alrededor del párrafo */
+    font-size: 24px; /* Ajusta el tamaño de fuente */
+  }
+  
+  table {
+    border-collapse: collapse;
+    background-color: transparent; /* Haz que la tabla sea transparente */
+    margin-top: 20px; /* Agrega espacio entre la tabla y el párrafo */
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #fcbf49; /* Cambia el color del borde */
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    display: block; /* Asegura que las imágenes estén centradas */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+  }
+  
