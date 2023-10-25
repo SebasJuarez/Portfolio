@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
   const history = useHistory();
@@ -12,9 +13,9 @@ const Header = () => {
     <header>
       <nav>
         <ul className="menu">
-          <li onClick={handleGoToHome} className="logo">
+          <button onClick={handleGoToHome} className="logo">
             SebasJuarez
-          </li>
+          </button>
         </ul>
       </nav>
     </header>
