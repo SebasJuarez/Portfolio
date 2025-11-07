@@ -4,11 +4,11 @@ import ProjectCard from './ProjectCard.jsx';
 import './Projects.css';
 
 // Import images from assets
-import ImgVisit from '../../assets/VOL.png';
-import ImgCalc from '../../assets/Calc.png';
-import ImgDatabies from '../../assets/Databies.png';
-import ImgMemory from '../../assets/Memoria.png';
-import ImgLuna from '../../assets/luna.png';
+import ImgVisit from '../../../public/VOL.png';
+import ImgCalc from '../../.../public/Calc.png';
+import ImgDatabies from '../../.../public/Databies.png';
+import ImgMemory from '../../.../public/Memoria.png';
+import ImgLuna from '../../.../public/luna.png';
 
 // Projects with descriptions for modal
 const sample = [
