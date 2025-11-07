@@ -1,0 +1,8 @@
+.contact{ background: linear-gradient(180deg, rgba(4,3,6,0.95), rgba(10,8,12,0.98)); color: #fff; padding:3.2rem 0; text-align:center }
+.contact h2{ margin:0 0 .25rem 0; color: var(--gold) }
+.contact p{ margin:0 0 1rem 0 }
+.socials{ display:flex; gap:1rem; justify-content:center; margin-bottom:1rem }
+.social{ color: #fff; text-decoration:none; padding:.6rem .8rem; border-radius:10px; background: rgba(255,255,255,0.03); transition: transform .15s ease, filter .15s, box-shadow .15s; display:inline-flex; align-items:center; justify-content:center }
+.social svg{ display:block; color: #fff }
+.social:hover{ transform: translateY(-4px); filter:brightness(1.12); box-shadow: 0 10px 30px rgba(212,175,55,0.14) }
+.copyright{ color: rgba(255,255,255,0.55); font-size:.85rem }

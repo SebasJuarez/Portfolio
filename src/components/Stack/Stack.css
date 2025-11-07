@@ -1,0 +1,14 @@
+.stack{ padding:3.6rem 0 }
+
+.stack-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1rem; margin-top:1rem }
+.stack-card{ background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4)); border-radius:16px; padding:1rem; box-shadow: 0 10px 28px rgba(6,8,15,0.08); backdrop-filter: blur(8px) }
+.stack-card-title{ margin:.2rem 0 .6rem 0 }
+.stack-badges{ display:flex; flex-wrap:wrap; gap:.5rem }
+
+.tool{ padding:.5rem .8rem; border-radius:999px; background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 10%, white 90%), color-mix(in srgb, var(--accent) 4%, white 96%)); color:#0b0b0b; box-shadow:0 8px 20px rgba(6,8,15,0.06); transition: transform .22s ease, box-shadow .22s }
+.tool:hover{ transform: translateY(-6px); box-shadow: 0 18px 40px rgba(212,175,55,0.14) }
+
+@media (prefers-color-scheme: dark){
+	.stack-card{ background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.08)); }
+	.tool{ background: linear-gradient(180deg, color-mix(in srgb, white 85%, var(--accent) 15%), color-mix(in srgb, white 92%, var(--accent) 8%)); color:#0b0b0b }
+}

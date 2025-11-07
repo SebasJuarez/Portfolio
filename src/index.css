@@ -1,21 +1,52 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  /* Paleta personalizada: blanco / negro / morado pastel / rojo / dorado */
+  --bg: #FBF8F6; /* base color */
+  --gradient-bg: radial-gradient(circle at 18% 28%, rgba(201,179,255,0.55) 0%, rgba(255,255,255,0.65) 32%, rgba(255,248,246,0.95) 70%) , linear-gradient(135deg, #FBF8F6 0%, #FFFDF9 100%);
+  --surface: rgba(255,255,255,0.6);
+  --glass: rgba(255,255,255,0.5);
+  --text: #0b0b0b; /* near-black for formality */
+  --muted: #66696f;
+  --accent: #C9B3FF; /* morado pastel */
+  --accent-2: #C62828; /* rojo elegante */
+  --gold: #D4AF37; /* dorado */
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #070708; /* black */
+    --gradient-bg: radial-gradient(circle at 22% 30%, rgba(189,167,255,0.28) 0%, rgba(40,40,48,0.55) 45%, rgba(10,10,12,0.95) 80%) , linear-gradient(140deg, #0B0C10 0%, #070708 100%);
+    --surface: rgba(10,10,12,0.6);
+    --glass: rgba(255,255,255,0.03);
+    --text: #F3F4F6;
+    --muted: #9aa0a6;
+    --accent: #BDA7FF; /* pastel purple slightly brighter */
+    --accent-2: #FF6B6B; /* softer red in dark mode */
+    --gold: #D4AF37;
+  }
+}
 
-  @font-face {
+body {
+  margin: 0;
+  font-family: 'SF-Pro', sans-serif;
+  background: var(--gradient-bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  background-attachment: fixed;
+}
+
+@font-face {
     font-family: 'SF-Pro';
     src: url('./fonts/sfprodisplayregular-webfont.woff2') format('woff2'),
          url('./fonts/sfprodisplayregular-webfont.woff') format('woff'),
          url('./fonts/SFPRODISPLAYREGULAR.otf') format('opentype');
   }
-}
+
+/* utilities */
+.section-title{ font-size: 1.5rem; margin: 0 0 .25rem 0 }
+.section-sub{ color: var(--muted); margin-bottom: 1.25rem }
+
+.container{ max-width:1200px; margin:0 auto; padding:0 1.25rem }

@@ -12,9 +12,10 @@
     "eslint": "eslint --init"
   },
   "dependencies": {
+    "framer-motion": "^12.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^5.3.4",
+    "react-router-dom": "^6.26.2",
     "three": "^0.156.1"
   },
   "devDependencies": {

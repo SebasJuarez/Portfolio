@@ -1,14 +1,17 @@
-import React from 'react'
-import "./Home.css"
+import React from 'react';
+import Hero from '../Hero/Hero.jsx';
+import Projects from '../Projects/Projects.jsx';
+import Stack from '../Stack/Stack.jsx';
+import Contact from '../Contact/Contact.jsx';
+import './Home.css';
 
-
-function Home () {
+export default function Home(){
   return (
-    <div className="Home">
-        <h1 className='titulo'>Soy SebasJuarez</h1>
-        <p className='info'>Presiona cualquiera de los planetas para saber más de mí</p>
-    </div>
-  )
+    <main>
+      <Hero />
+      <Projects />
+      <Stack />
+      <Contact />
+    </main>
+  );
 }
-
-export default Home

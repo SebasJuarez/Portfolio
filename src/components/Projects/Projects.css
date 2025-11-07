@@ -1,0 +1,52 @@
+.projects{ padding: 4rem 0; background: var(--bg); color: var(--text) }
+.projects-inner{ max-width:1200px; margin:0 auto; padding:0 1.25rem }
+.projects-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.2rem; margin-top:1.5rem }
+
+/* Conveyor belt styles */
+.conveyor-wrapper{ position:relative; overflow:hidden; margin-top:1.5rem; padding:1.2rem 0 }
+.conveyor-wrapper:before,
+.conveyor-wrapper:after{ content:""; position:absolute; top:0; bottom:0; width:120px; pointer-events:none; z-index:10 }
+.conveyor-wrapper:before{ left:0; background:linear-gradient(90deg, var(--bg) 0%, rgba(255,255,255,0) 100%) }
+.conveyor-wrapper:after{ right:0; background:linear-gradient(270deg, var(--bg) 0%, rgba(255,255,255,0) 100%) }
+
+.conveyor{ display:flex; gap:1rem; align-items:stretch; padding: .25rem; will-change: transform; cursor: grab }
+.conveyor:active{ cursor: grabbing }
+.conveyor-item{ flex: 0 0 auto; width: 300px }
+.conveyor-item .project-card-glass{ width: 100%; }
+
+/* decorative track */
+.conveyor-wrapper .track-lines{ position:absolute; left:0; right:0; top:50%; height:4px; background: repeating-linear-gradient(90deg, var(--accent) 0 24px, rgba(255,255,255,0.4) 24px 32px); opacity:.25; transform:translateY(-50%) }
+
+.project-card-glass{
+  position: relative;
+  border-radius:14px;
+  overflow: visible;
+  background: linear-gradient(180deg, rgba(201,179,255,0.06), rgba(255,223,127,0.02));
+  box-shadow: 0 10px 34px rgba(6,8,15,0.08);
+  padding: .8rem;
+  backdrop-filter: blur(10px) saturate(120%);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .2s;
+}
+
+.project-card-glass:hover{ transform: translateY(-6px); border-color: rgba(198,158,255,0.25) }
+
+.project-media{ position: relative }
+.project-media img{ width:100%; height:160px; object-fit:cover; border-radius:10px; display:block; cursor: pointer }
+.project-body{ padding: .6rem 0 }
+.project-body h3{ margin:0 0 .25rem 0 }
+.project-body .tech{ color:var(--muted); font-size:.9rem }
+.project-actions{ margin-top:.6rem; display:flex; gap:.6rem }
+.project-actions a{ color:var(--accent-2); text-decoration:none; font-weight:700 }
+
+/* modal */
+.modal-backdrop{ position: fixed; inset: 0; background: rgba(6,8,15,0.52); backdrop-filter: blur(4px); display:flex; align-items:center; justify-content:center; z-index: 60 }
+.modal{ width:min(920px, 92vw); background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.45)); color: var(--text); border-radius:16px; box-shadow: 0 20px 80px rgba(6,8,15,0.28); overflow:hidden; display:grid; grid-template-columns: 1fr 1.1fr; gap:0 }
+.modal-media img{ width:100%; height:100%; object-fit:cover; display:block }
+.modal-body{ padding:1.2rem }
+.modal-body h3{ margin:0 0 .25rem 0 }
+.modal-body .desc{ color: var(--muted) }
+.modal .project-actions.big a{ display:inline-flex; gap:.4rem; align-items:center; padding:.6rem .9rem; border-radius:10px; background: color-mix(in srgb, var(--accent) 12%, white 88%); color: var(--text); text-decoration:none; font-weight:700; margin-right:.6rem }
+.modal-close{ position:absolute; top:8px; right:10px; border:none; background: rgba(0,0,0,0.05); color:var(--text); width:36px; height:36px; border-radius:10px; cursor:pointer }
+
+.mini-board{ display:grid; grid-template-columns: repeat(3, 28px); gap:6px }
+.mini-cell{ width:28px; height:28px; border-radius:6px; border: none; background: color-mix(in srgb, var(--accent) 18%, white 82%); cursor: pointer; box-shadow: 0 2px 6px rgba(2,6,23,0.06); font-size:14px; color: var(--text); }
